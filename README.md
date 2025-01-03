@@ -41,34 +41,6 @@ Coloque o menor elemento na lista final ordenada.
 Repita o processo até que todos os elementos sejam combinados em ordem crescente.
 
 
-PSEUDOCÓDIGO
-
-
-mergeSort(array):
-    if tamanho(array) <= 1:
-        return array
-
-    meio = tamanho(array) / 2
-    esquerda = array[0 : meio]
-    direita = array[meio : fim]
-
-    esquerda_ordenada = mergeSort(esquerda)
-    direita_ordenada = mergeSort(direita)
-
-    return merge(esquerda_ordenada, direita_ordenada)
-
-merge(esquerda, direita):
-    lista_resultante = []
-    enquanto esquerda e direita não estiverem vazias:
-        se esquerda[0] < direita[0]:
-            lista_resultante.adicionar(esquerda.remover_primeiro())
-        senão:
-            lista_resultante.adicionar(direita.remover_primeiro())
-
-    adicionar todos os elementos restantes de esquerda e direita à lista_resultante
-    return lista_resultante
-
-
 Exemplo Prático
 
 
@@ -133,7 +105,6 @@ Combina em: [3, 9, 10, 82]
 Combina em: [3, 9, 10, 27, 38, 43, 82]
 
 Resultado final: [3, 9, 10, 27, 38, 43, 82]
-
 
 
 Vantagens do Merge Sort
